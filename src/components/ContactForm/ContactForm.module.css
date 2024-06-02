@@ -1,75 +1,36 @@
-.primary {
-    padding-left: 50px;
-    width: 600px;
-    margin: 0 auto;
-}
-
-.header {
-    margin-left: 50px;
-    color: rgb(118, 118, 118);
-}
-
 .form {
-    flex-direction: column;
-    justify-content: center;
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    width: 350px;
-    height: 180px;
-    gap: 10px;
-    border-radius: 7px;
-}
-
-.container {
     flex-direction: column;
-    justify-content: flex-start;
-    display: flex;
-    margin-left: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 300px;
+    background-color: #000000;
 }
 
 .label {
-    display: block;
-    font-size: 15px;
-    line-height: 1.5;
-    margin-bottom: 5px;
-}
-
-.input {
-    font-size: 15px;
-}
-
-.input:hover {
-    border: 2px solid rgb(69, 156, 249);
-    border-radius: 5px;
-}
-
-.input:focus {
-    border: 2px solid rgb(69, 156, 249);
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .button {
-    margin-top: 10px;
-    width: 80px;
-    font-size: 12px;
-    height: 25px;
-    margin-left: 20px; 
-}
-
-.button:hover {
-    background-color: rgb(69, 156, 249);
-    border-radius: 5px;
+    margin-top: 15px;
+    padding: 5px;
+    cursor: pointer;
     border: none;
+    border-radius: 3px;
+    width: 150px;
+    align-self: center;
+    background-color: #999999;
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.button:focus {
-    background-color: rgb(127, 181, 239);
-    border-radius: 5px;
-    border: none;
-}
-
-.list {
-    gap: 8px;
-    display: grid;
+.button:hover,
+.button:active {
+    background-color: #ff684e;
 }

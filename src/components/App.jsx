@@ -7,7 +7,7 @@ import { fetchContacts } from '../redux/operations';
 import { getError, getIsLoading } from '../redux/state';
 import Filter from './Filter/Filter';
 import { Loader } from './Loader/Loader';
-import background from './img/apple.jpeg';
+import background from './img/background.jpeg';
 
 export const App = () => {
   const dispatch = useDispatch();

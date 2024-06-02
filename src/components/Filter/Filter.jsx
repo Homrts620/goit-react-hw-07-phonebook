@@ -1,8 +1,8 @@
-import { setFilter } from 'components/redux/filterSlice';
 import { useDispatch } from 'react-redux';
+import { setFilter } from '../../redux/filterSlice';
 import css from './Filter.module.css';
-export const Filter = () => {
 
+const Filter = () => {
 const dispatch = useDispatch();
 
 const changeHandler = e => {
@@ -11,18 +11,11 @@ const changeHandler = e => {
 };
 
 return (
-    <div className={css.primary}>
-    <div className={css.container}>
-        <label className={css.label}>Find contacts by Name</label>
-        <div>
-        <input
-            className={css.input}
-            type="text"
-            name="filter"
-            onChange={changeHandler}
-        />
-        </div>
-    </div>
-    </div>
+    <label className={css.label}>
+    <span className={css.span}>Find contacts by name</span>
+    <input type="text" name="filter" onChange={changeHandler} />
+    </label>
 );
 };
+
+export default Filter;
